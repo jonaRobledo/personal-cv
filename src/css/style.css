@@ -1,3 +1,51 @@
-body {
-    background-color: rgb(187, 181, 181);
+/* Globals Styles */
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* -- Navigation -- */
+.navigation {
+    text-align: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #555555, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #555555, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 18vh;
+}
+
+.first-title {
+    font-family: 'RocknRoll One', Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    padding: 1.5rem 0;
+}
+
+.menu {
+    font-family: 'Noto Sans JP',Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.menu__item {
+    display: inline-block;
+    margin: 0 1.8rem;
+    transition: 1.5s;
+}
+
+.menu__item:hover {
+    text-decoration: underline rgb(192, 192, 192) 1.2px;
+}
+
+.menu__link {
+    color: white;
+
+}
+
+.active {
+    font-weight: bold;
 }
